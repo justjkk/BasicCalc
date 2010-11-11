@@ -127,3 +127,4 @@ function init()
    btnDiv.onclick = function() { performCalc(btnDiv) };
    btnEqu.onclick = function() { performCalc(btnEqu) };
 }
+window.onload = init;

@@ -3,44 +3,48 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Basic Programmable Calculator</title>
+<link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection">
+<link rel="stylesheet" href="stylesheets/buttons.css" media="screen, projection">
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript" src="BasicProgCalculator.js"></script>
 </head>
-<body onload="init();">
-<div id="wrapper">
-<input type="text" value="0" id="txtDisplay" class="display_area" disabled="disabled" />
-<table class="buttons">
+<body class="two-col bp">
+<div id="container">
+<div id="calculator">
+<input type="text" value="0" id="txtDisplay" disabled="disabled" />
+<table id="keypad">
 <tr>
-<td><input type="button" value="BKSP" id="btnBksp"/></td>
-<td><input type="button" value="CE" id="btnCe"/></td>
-<td><input type="button" value="CLR" id="btnClr"/></td>
-<td><input type="button" value="+" id="btnAdd"/></td>
+<td><button id="btnBksp" class="negative">Bksp</button></td>
+<td><button id="btnCe" class="negative">CE</button></td>
+<td><button id="btnClr" class="negative">CLR</button></td>
+<td><button value="+" class="positive" id="btnAdd">+</button></td>
 </tr>
 <tr>
-<td><input type="button" value="7" id="btn7"/></td>
-<td><input type="button" value="8" id="btn8"/></td>
-<td><input type="button" value="9" id="btn9"/></td>
-<td><input type="button" value="/" id="btnDiv"/></td>
+<td><button value="7" id="btn7">7</button></td>
+<td><button value="8" id="btn8">8</button></td>
+<td><button value="9" id="btn9">9</button></td>
+<td><button value="/" id="btnDiv" class="positive">/</button></td>
 </tr>
 <tr>
-<td><input type="button" value="4" id="btn4"/></td>
-<td><input type="button" value="5" id="btn5"/></td>
-<td><input type="button" value="6" id="btn6"/></td>
-<td><input type="button" value="*" id="btnMul"/></td>
+<td><button value="4" id="btn4">4</button></td>
+<td><button value="5" id="btn5">5</button></td>
+<td><button value="6" id="btn6">6</button></td>
+<td><button value="*" id="btnMul" class="positive">*</button></td>
 </tr>
 <tr>
-<td><input type="button" value="1" id="btn1"/></td>
-<td><input type="button" value="2" id="btn2"/></td>
-<td><input type="button" value="3" id="btn3"/></td>
-<td><input type="button" value="-" id="btnSub"/></td>
+<td><button value="1" id="btn1">1</button></td>
+<td><button value="2" id="btn2">2</button></td>
+<td><button value="3" id="btn3">3</button></td>
+<td><button value="-" id="btnSub" class="positive">-</button></td>
 </tr>
 <tr>
-<td><input type="button" value="" id="btn"/></td>
-<td><input type="button" value="0" id="btn0"/></td>
-<td><input type="button" value="." id="btnDot"/></td>
-<td><input type="button" value="=" id="btnEqu"/></td>
+<td><button value="" id="btn"></button></td>
+<td><button value="0" id="btn0">0</button></td>
+<td><button value="." id="btnDot">.</button></td>
+<td><button value="=" id="btnEqu" class="positive">=</button></td>
 </tr>
 </table>
+</div>
 </div>
 </body>
 </html>
